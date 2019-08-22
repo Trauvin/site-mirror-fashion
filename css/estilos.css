@@ -80,12 +80,17 @@ header {
     margin: 10px 0;
     padding: 10px;
     width: 445px;
+    border-radius: 5px;
+    text-shadow: 10px black;
+    box-shadow: inset 0 0 40px #6600ff;
 }
 .novidades {
     float: left;
+    background: linear-gradient(#f5dcdc, #bebef4);
 }
 .mais-vendidos {
     float: right;
+    background: linear-gradient(#dcdcf5, #f4bebe);
 }
 .painel li {
     display: inline-block;
@@ -99,6 +104,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;;
     margin-bottom: 10px;
+    text-shadow: 3px 3px 2px #cce6ff;
 }
 .painel a {
     color: #333;
@@ -177,8 +183,22 @@ footer .container {
 .menu-departamentos li li a::before {
     content: '-';
 }
+/* CONCEITOS IMPORTANTES DE CSS */
 .painel h2::before {
     content: '\2756';
     padding-right: 5px;
     opacity: 0.4;
 }
+.painel li:hover {
+    background-color: rgb(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: 0.7s ease-in-out;
+    transform: scale(1.1) rotate(-5deg);
+}
+.painel li:nth-child(2n):hover {
+    transform: scale(1.1) rotate(5deg)
+}
+.painel li {
+    transition: 0.7s cubic-bezier(.03,.68,1,.91);
+}
+/* FIM */
