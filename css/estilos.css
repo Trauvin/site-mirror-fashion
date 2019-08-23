@@ -29,6 +29,7 @@ body {
 
 header {
     position: relative;
+    
 }
 .menu-opcoes {
     position: absolute;
@@ -40,6 +41,7 @@ header {
     bottom: 0;
     right: 0;
     padding-bottom: 10px;
+   
 }
 .busca,
 .busca button,
@@ -80,8 +82,8 @@ header {
     /* background-color: #e5ddf0; */
 }
 .painel {
-    margin: 10px 0;
-    padding: 10px;
+    margin: 10px 0; /*10 0*/
+    padding-top: 10px;
     width: 445px;
     border-radius: 5px;
     text-shadow: 10px black;
@@ -214,4 +216,12 @@ footer .container {
 /* FIM */
 .logo-mirror {
     padding-bottom: 25px;
+    border-bottom: 2px solid #6600ff;
+}
+#miga {
+    margin-top: 14px; /* uma coisa estranha */
+}
+#miga img {
+    border-radius: 5px;
+    box-shadow: red;
 }
