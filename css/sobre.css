@@ -36,7 +36,7 @@ p {
     float: right;
     margin: 10px 10px 2px 5px;
 }
-#centro-distribuicao {
+.centro-distribuicao {
     margin-left: auto;
     margin-right: auto;
     width: 540px;
@@ -106,36 +106,12 @@ footer .container {
     top: 12px;
     right: 0;
 }
-.social li {
-    float: left;
-    margin-left: 25px;
-}
-.social a {
-    height: 32px;
-    width: 32px;
-
-    display: block;
-    text-indent: -9999px;
-}
-.social a[href*="facebook.com"] {
-    background-image: url(../img/facebook.png);
-}
-.social a[href*="twitter.com"] {
-    background-image: url(../img/twitter.png);
-}
-footer .container {
-    position: relative;
-}
-.social {
-    position: absolute;
-    top: 12px;
-    right: 0;
-}
 footer {
     clear: both;
     background-image: url(../img/fundo-rodape.png);
-    padding: 20px 0;
+    padding: 200px 0;
 }
+
 p::first-letter {
     font-size: 200%;
 }
@@ -147,4 +123,30 @@ p::first-line {
 }
 :not(p) + p::first-line {
     font-variant: small-caps;
+}
+@media (max-width: 939px) {
+    .container {
+        width: 96%;
+    }
+    header h3 {
+        text-align: center;
+    }
+    header h3 img {
+        width: 50%;
+    }
+    .menu-opcoes {
+        position: static;
+        text-align: center;
+    }
+    .menu-opcoes ul li {
+        display: inline-block;
+        margin: 4px;
+    }
+    .centro-distribuicao {
+        width: auto;
+    }
+    .centro-distribuicao img{
+        width: 100%;
+    }
+
 }
